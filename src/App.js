@@ -1,21 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
+import { Link_func, Link_class } from './components/Link';
 
 function App() {
-  // Option1: JSX
   return (
-    <a class="link" href="https://learn.javascript.ru/">
-      We learn JS
-    </a>
+    <>
+      <Link_class href="https://learn.javascript.ru/" text="We learn JS" />
+      <Link_func href="https://ru.reactjs.org/" text="We learn React" />
+    </>
   );
-
-  // Option2: createElement
-  // return React.createElement(
-  //   'a',
-  //   { className: 'link', href: 'https://learn.javascript.ru/' },
-  //   'We learn JS'
-  // );
 }
 
 export default App;
